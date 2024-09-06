@@ -74,7 +74,7 @@ def check_login(checked_login):
     password_attempts = 3
 
     while checked_password != password and password_attempts > 0: #sets a loop to check the user name matches
-        password_attempts = password_attempts - 1
+        password_attempts -= 1
         print("you have " + str(password_attempts) + " left ")
         checked_password = input("Enter password: \n")
 
