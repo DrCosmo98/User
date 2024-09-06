@@ -30,7 +30,7 @@ class account_handler:
                 lower_case = True
             if char.isdigit():
                 upper_case = True
-            if not char.isalnum():
+            if  not char.isalnum():
                 special = True
         if lower_case and upper_case and num and special:
             print("vaild password ")
@@ -55,10 +55,10 @@ class account_handler:
         password = None
         while password != self.password:
             password = input(str(password_attempts) + " attemts at password \nEnter password: \n")
-            password_attempts -= 1
             if password_attempts == 0:
                 print("get out you dam hacker")
                 exit()
+            password_attempts -= 1
         return True
           
         

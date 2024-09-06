@@ -10,11 +10,11 @@ while True:
         
         ah.enter_username()
         while True:
-           if ah.enter_password() == True:
+           if ah.enter_password():
                break
     elif reg_status == "l":
         while True:
-            if ah.check_username() == True:
+            if ah.check_username():
                 break
         ah.check_password()
         print(ah.username + " logged in")
